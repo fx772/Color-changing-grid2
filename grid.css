@@ -2,14 +2,18 @@ body{
 	background-color:white;
 }
 
-#myTable{
-	border:0px;
+#topInfoBar{
+	margin:5px;
 	}
 
 #controls{
 	display:inline;
 	white-space: nowrap;
 }
+
+#myTable{
+	border:0px;
+	}
 
 .row{
 	text-align:center;
