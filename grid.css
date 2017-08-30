@@ -42,8 +42,10 @@ button {
   	color:white;
   	box-shadow:0 0 8px rgba(0, 0, 0, 0.3);
 	border:1px solid transparent;
-  	margin-right:3px;
+  	margin:1px;
+ 	vertical-align: top;
 	overflow:hidden;
+	cursor: pointer;
 	position:relative;
 }
 
