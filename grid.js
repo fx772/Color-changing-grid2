@@ -46,7 +46,7 @@ function makeGrid(){
 
 	for (var i = 1; i<=xy; i++){
 	
-		var row = document.createElement("span");
+		var row = document.createElement("div");
 		row.setAttribute("class", "row");
 		row.setAttribute("rowIndex", i);
 		myTable.appendChild(row);
