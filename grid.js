@@ -2,7 +2,7 @@ var grid = {"items":[]}, total, xy, max = 20;
 
 function validateGrid(){
 
-	if (total <= 3){
+	if (total < 4){
 		console.log('Total too small to make a nice grid...');
 	};
 	
