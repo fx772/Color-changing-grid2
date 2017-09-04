@@ -185,7 +185,8 @@ Array.prototype.forEach.call(buttons, function (b) {
 			buttonNeighbours = grid.items[index-1].neighbours;
 		
 		for (var i=0; i<c; i++){
-			document.getElementsByClassName('neighbour')[0].remove();
+			var toDelete = document.getElementsByClassName('neighbour')[0];
+                        toDelete.parentElement.removeChild(toDelete);
 		}
 		
 		for (var j=0; j<cb; j++){
@@ -235,7 +236,7 @@ function paint(){
 
 		var newAmount, 
 		    sliderVal = document.getElementById("slider").value, 
-			selection = document.querySelector("[name=xy1]");	
+		    selection = document.querySelector("[name=xy1]");	
 			
 		selection.value = sliderVal;
 		fillGrid(sliderVal*sliderVal);
