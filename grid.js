@@ -62,8 +62,8 @@ function makeGrid(){
 				row.appendChild(col);
 
 				if (j%xy==0){
-				continueVar=j+1;
-				break;
+				    continueVar=j+1;
+				    break;
 				}
 		}
 		myTable.appendChild(row);
@@ -181,8 +181,8 @@ Array.prototype.forEach.call(buttons, function (b) {
 		var index = this.parentElement.getAttribute("index"),
 		    c = document.getElementsByClassName('neighbour').length,
 		    cb = document.querySelectorAll('[class="clickedButton"]').length,
-			d = Math.max(this.clientWidth, this.clientHeight),
-			buttonNeighbours = grid.items[index-1].neighbours;
+		    d = Math.max(this.clientWidth, this.clientHeight),
+	            buttonNeighbours = grid.items[index-1].neighbours;
 		
 		for (var i=0; i<c; i++){
 			var toDelete = document.getElementsByClassName('neighbour')[0];
@@ -199,8 +199,8 @@ Array.prototype.forEach.call(buttons, function (b) {
 		Array.prototype.forEach.call(Object.keys(buttonNeighbours), function (b) {
 				
 				var animation = document.createElement('div'), 
-					left,
-					top;
+				    left,
+				     top;
 					
 				document.querySelector('[index="'+b+'"] button').appendChild(animation);
 				
@@ -224,7 +224,7 @@ Array.prototype.forEach.call(buttons, function (b) {
 				animation.classList.add('neighbour');
 				document.querySelector('[index="'+b+'"] button').setAttribute('style', 'background-color:'+getAColor());
 		
-		});
+		       });
 		}	
 	}
 	
@@ -250,7 +250,7 @@ function paint(){
 var readyStateCheckInterval = setInterval(function() {
     if (document.readyState === "complete") {
         clearInterval(readyStateCheckInterval);
-		document.getElementById("slider").value = 4;
-		paint();
+	document.getElementById("slider").value = 4;
+	paint();
     }
 }, 10);
